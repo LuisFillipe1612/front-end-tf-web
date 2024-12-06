@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Adex</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="images/logo.png"
+            width="74"
+            height="24"
+            class="logo-light"
+          />
+        </a>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li>
+              <a href="#inicio" class="navbar-link">Inicio</a>
+            </li>
+            <li>
+              <a href="#sobre" class="navbar-link">Sobre</a>
+            </li>
+            <li>
+              <a href="#serviços" class="navbar-link">Serviços</a>
+            </li>
+            <li>
+              <a href="#contato" class="navbar-link">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <article>
+        <section
+          class="section hero"
+          style="background-image: url('images/hero-bg.jpg')"
+          id="inicio"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                Realizando Eventos Inesquecíveis em Grande Estilo!
+              </h1>
+              <p class="hero-text">
+                Nossa missão é transformar cada evento em uma experiência única.
+                Garantimos que seu evento brilhe em todos os detalhes. Estamos
+                prontos para atender suas necessidades e superar expectativas!
+              </p>
+              <div class="btn-wrapper">
+                <a href="#" class="btn btn-outline">Entre em contato</a>
+              </div>
+            </div>
+
+            <div class="hero-slider">
+              <div class="slider-inner">
+                <ul class="slider-container">
+                  <li class="slider-item">
+                    <img
+                      src="images/jazz-saxophonist-bro.png"
+                      width="575"
+                      height="550"
+                      class="img-cover"
+                    />
+                  </li>
+                  <button class="play-btn" aria-label="play adex intro">
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                  </button>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="section service"
+          aria-labelledby="service-label"
+          id="sobre"
+        >
+          <div class="container">
+            <p class="section-subtitle" id="service-label">
+              O que nos fazemos?
+            </p>
+            <h2 class="h2 section-title">
+              Estamos aqui para transformar sua visão em realidade
+            </h2>
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <i class="fa-solid fa-headphones"></i>
+                  </div>
+
+                  <h3 class="h4 card-title">Sonorização</h3>
+
+                  <p class="card-text">
+                    Proporcionamos sistemas de som de alta qualidade para todos
+                    os tipos de eventos.
+                  </p>
+                  <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                      <div class="backgrond-blur">
+                        <div class="close-btn" onclick="togglePopup1()">
+                          &times;
+                        </div>
+                        <h1 class="popup-title">Sonorização</h1>
+                        <p class="popup-text">
+                          Transforme seu evento com uma experiência sonora
+                          incomparável!
+                        </p>
+                        <p class="popup-text">
+                          Nosso serviço de sonorização é projetado para garantir
+                          que cada nota e cada palavra sejam ouvidas com clareza
+                          e perfeição, criando uma atmosfera envolvente e
+                          memorável. Nós entendemos que a qualidade do som é
+                          fundamental para o sucesso de qualquer evento, seja
+                          uma conferência, um casamento, um show ou uma festa
+                          corporativa.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="javascript:void(0)"
+                    class="btn-text"
+                    onclick="togglePopup1()"
+                  >
+                    <span class="span">Leia Mais</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <i class="fa-solid fa-hammer"></i>
+                  </div>
+
+                  <h3 class="h4 card-title">Montagem de Palcos</h3>
+
+                  <p class="card-text">
+                    Estruturas seguras e criativas para garantir a melhor
+                    apresentação.
+                  </p>
+                  <div class="popup" id="popup-2">
+                    <div class="overlay"></div>
+                    <div class="content">
+                      <div class="backgrond-blur">
+                        <div class="close-btn" onclick="togglePopup2()">
+                          &times;
+                        </div>
+                        <h1 class="popup-title">Montagem de Palcos</h1>
+                        <p class="popup-text">
+                          Nossos serviços de montagem de palcos são projetados
+                          para atender a todos os tipos de eventos, desde shows
+                          ao vivo e festivais até conferências e casamentos.
+                          Entendemos que um palco bem montado é essencial para
+                          garantir que cada apresentação seja memorável, segura
+                          e visualmente impactante.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="javascript:void(0)"
+                    class="btn-text"
+                    onclick="togglePopup2()"
+                  >
+                    <span class="span">Leia Mais</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                  </div>
+
+                  <h3 class="h4 card-title">Consultoria de Eventos</h3>
+
+                  <p class="card-text">
+                    Planejamento e execução de eventos sob medida, do início ao
+                    fim.
+                  </p>
+                  <div class="popup" id="popup-3">
+                    <div class="overlay"></div>
+                    <div class="content">
+                      <div class="backgrond-blur">
+                        <div class="close-btn" onclick="togglePopup3()">
+                          &times;
+                        </div>
+                        <h1 class="popup-title">Consultoria de Eventos</h1>
+                        <p class="popup-text">
+                          Transforme sua visão em realidade com nossa
+                          Consultoria de Eventos, um serviço dedicado a planejar
+                          e executar eventos memoráveis e sob medida para suas
+                          necessidades. Nossa equipe de especialistas está
+                          pronta para guiá-lo em cada etapa do processo,
+                          garantindo que cada detalhe seja cuidadosamente
+                          considerado e executado.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="javascript:void(0)"
+                    class="btn-text"
+                    onclick="togglePopup3()"
+                  >
+                    <span class="span">Leia Mais</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <i class="fa-solid fa-camera-retro"></i>
+                  </div>
+
+                  <h3 class="h4 card-title">Transmissão Ao Vivo</h3>
+
+                  <p class="card-text">
+                    Conecte seu evento ao mundo com nossas soluções de
+                    streaming.
+                  </p>
+
+                  <div class="popup" id="popup-4">
+                    <div class="overlay"></div>
+                    <div class="content">
+                      <div class="backgrond-blur">
+                        <div class="close-btn" onclick="togglePopup4()">
+                          &times;
+                        </div>
+                        <h1 class="popup-title">Transmissão Ao Vivo</h1>
+                        <p class="popup-text">
+                          Nosso serviço de transmissão ao vivo foi desenvolvido
+                          para garantir que seu evento alcance um público amplo
+                          e engajado, independentemente da localização física
+                          dos espectadores. Seja para uma conferência, um show,
+                          um webinar ou um evento corporativo, nossa equipe é
+                          especializada em proporcionar uma experiência de
+                          transmissão fluida e profissional.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="javascript:void(0)"
+                    class="btn-text"
+                    onclick="togglePopup4()"
+                  >
+                    <span class="span">Leia Mais</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section project" aria-labelledby="project-label" id="serviços">
+          <div class="container">
+            <p class="section-subtitle" id="project-label">
+              Eventos Organizados
+            </p>
+
+            <h2 class="h2 section-title">
+              Veja todos os eventos que já organizamos
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="images/imagem-festa-1.jpeg"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="Ligula tristique quis risus"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Noite de Rock ao Vivo</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Junte-se a nós para uma noite eletrizante com bandas de
+                      rock locais e convidados especiais. Prepare-se para um
+                      show cheio de energia e grandes clássicos!
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="calendar-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time class="meta-text" datetime="2022-04-14"
+                          >14 de Abril | 2022</time
+                        >
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="document-text-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="meta-text">Show</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="images/imagem-festa-2.jpeg"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="Nullam id dolor elit id nibh"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Festival de Música Eletrônica</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      Uma imersão em ritmos cativantes e batidas envolventes.
+                      DJs renomados e novos talentos se reúnem para criar uma
+                      experiência de dança inesquecível sob as estrelas.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="calendar-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time class="meta-text" datetime="2022-03-29"
+                          >29 de Março | 2022</time
+                        >
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="document-text-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="meta-text">Show</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="images/imagem-festa.jpeg"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="Ultricies fusce porta elit"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Show de Sertanejo Raiz</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Celebre a tradição do sertanejo com grandes sucessos e
+                      canções emocionantes. Artistas consagrados se apresentam
+                      em uma noite de muita música e alegria.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="calendar-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time class="meta-text" datetime="2022-02-26"
+                          >26 de Fevereiro | 2024</time
+                        >
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="document-text-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="meta-text">Show</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="cta" aria-label="call to action" id="contato">
+          <div class="container">
+            <h2 class="h2 section-title">
+              Descubra como podemos elevar seu evento ao próximo nível!
+            </h2>
+
+            <a href="#" class="btn btn-primary">Entre em Contato</a>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="container grid-list">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="images/logo.png" width="74" height="24" alt="Adex home" />
+          </a>
+
+          <p class="footer-text">All rights reserved.</p>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Locais</p>
+          </li>
+
+          <li>
+            <address class="footer-text">
+              Avenida Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200,
+              Brasil
+            </address>
+          </li>
+
+          <li>
+            <a href="mailto:info@email.com" class="footer-link"
+              >contato@espacoculturalsp.com.br</a
+            >
+          </li>
+
+          <li>
+            <a href="tel:001234567890" class="footer-link"
+              >+55 (11) 1234-5678</a
+            >
+          </li>
+        </ul>
+
+        <div class="footer-list">
+          <p class="h4 footer-list-title">Inscreva-se</p>
+
+          <p class="footer-text">
+            Faça sua inscrição para não perder nossas promoções
+          </p>
+
+          <form action="" class="input-wrapper">
+            <input
+              type="email"
+              name="email_address"
+              placeholder="E-mail"
+              required
+              class="input-field"
+            />
+
+            <button type="submit" class="submit-btn">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="js/script.js"></script>
+
+    <!-- 
+    - ionicon
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
