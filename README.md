@@ -2,7 +2,7 @@
 Front-End do trabalho final da disciplina de WEB
 
 ## Link para o Deploy do Projeto
-[Visualizar Site](https://seusite.com)  <!-- Substitua pelo link real do seu site -->
+[Visualizar Site](https://luisfillipe1612.github.io/front-end-tf-web/)  <!-- Substitua pelo link real do seu site -->
 
 ## Descrição
 O Adex é uma plataforma dedicada à organização de eventos, oferecendo soluções completas para garantir que cada evento seja uma experiência inesquecível. Desde conferências corporativas até festas privadas, nossa equipe está preparada para atender a todas as suas necessidades com qualidade e profissionalismo.
@@ -20,12 +20,12 @@ O Adex é uma plataforma dedicada à organização de eventos, oferecendo soluç
 - JavaScript
 - (Outras tecnologias que você usou, se aplicável)
 
-## Como Contribuir
-1. Faça um fork do projeto.
-2. Crie uma branch para sua feature (`git checkout -b feature/nome-da-feature`).
-3. Commit suas alterações (`git commit -m 'Adiciona nova funcionalidade'`).
-4. Envie para a branch (`git push origin feature/nome-da-feature`).
-5. Abra um Pull Request.
+## Participantes
+1. Adriano Miranda
+2. Hênio Richard
+3. Luis Fillipe
+4. Renan Nunes
+5. Rhuan Spósito
 
 ## Licença
 Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
