@@ -5,7 +5,7 @@ Front-End do trabalho final da disciplina de WEB
 [Visualizar Site](https://luisfillipe1612.github.io/front-end-tf-web/)  <!-- Substitua pelo link real do seu site -->
 
 ## Descrição
-O Adex é uma plataforma dedicada à organização de eventos, oferecendo soluções completas para garantir que cada evento seja uma experiência inesquecível. Desde conferências corporativas até festas privadas, nossa equipe está preparada para atender a todas as suas necessidades com qualidade e profissionalismo.
+O FM Super Som é uma plataforma dedicada à organização de eventos, oferecendo soluções completas para garantir que cada evento seja uma experiência inesquecível. Desde conferências corporativas até festas privadas, nossa equipe está preparada para atender a todas as suas necessidades com qualidade e profissionalismo.
 
 ## Principais Funcionalidades
 - **Sonorização**: Sistemas de som de alta qualidade para garantir que cada detalhe do evento seja ouvido com clareza.
@@ -18,7 +18,6 @@ O Adex é uma plataforma dedicada à organização de eventos, oferecendo soluç
 - HTML
 - CSS
 - JavaScript
-- (Outras tecnologias que você usou, se aplicável)
 
 ## Participantes
 1. Adriano Miranda
