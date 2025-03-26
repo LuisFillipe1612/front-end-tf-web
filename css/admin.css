@@ -1,0 +1,68 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: rgb(209, 117, 117);
+    align-items: center;
+}
+#menu {
+    display: flex;
+    list-style-type: none;
+    text-align: justify;
+}
+
+#menu li {
+    padding: 20px;
+}
+
+#menu li > a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu li > a:hover {
+    background-color: rgb(148, 80, 80);
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#resposta {
+    margin-top: 100px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#shows {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#shows th,
+#shows td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid rgb(148, 80, 80); /* Your requested border color */
+}
+
+#shows th {
+  background-color: rgb(148, 80, 80); /* Header background */
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#submit {
+    margin: 40px;
+    background-color: rgb(209, 117, 117);
+    border-color: rgb(148, 80, 80);
+    width: 100px;
+    font-size: medium;
+}

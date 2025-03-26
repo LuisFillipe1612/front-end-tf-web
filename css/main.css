@@ -1,31 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
-
-  /**
-   * colors
-   */
-
-  --violet-blue-crayola: hsla(234, 50%, 64%, 1);
-  --dark-cornflower-blue_a7: hsla(214, 88%, 27%, 0.07);
+  --violet-blue-crayola: rgb(209, 117, 117);
+  --dark-cornflower-blue_a7: hsla(0, 88%, 27%, 0.07);
   --white: hsla(0, 0%, 100%, 1);
   --white_a3: hsla(0, 0%, 100%, 0.03);
   --white_a8: hsla(0, 0%, 100%, 0.08);
   --white_a12: hsla(0, 0%, 100%, 0.12);
   --white_a70: hsla(0, 0%, 100%, 0.7);
-  --cultured: hsla(220, 20%, 97%, 1);
-  --lavender-web: hsla(233, 52%, 94%, 1);
-  --cadet-blue-crayola: hsla(220, 12%, 70%, 1);
-  --cadet-blue-crayola_a20: hsla(222, 23%, 71%, 0.2);
-  --charcoal: hsla(218, 22%, 26%, 1);
-  --raisin-black: hsla(216, 14%, 14%, 1);
+  --cultured: rgb(249, 246, 246);
+  --lavender-web: rgb(248, 232, 232);
+  --cadet-blue-crayola: rgb(188, 169, 169);
+  --cadet-blue-crayola_a20: hsla(0, 23%, 71%, 0.2);
+  --charcoal: rgb(81, 52, 52);
+  --raisin-black: rgb(41, 31, 31);
   --light-gray: hsla(0, 0%, 79%, 1);
-  --blue-crayola: hsla(219, 72%, 56%, 1);
+  --blue-crayola: rgb(224, 62, 62);
   --black-coral: hsla(220, 12%, 43%, 1);
-
-  /**
-   * typography
-   */
 
   --ff-manrope: 'Montserrat', sans-serif;
 
@@ -40,23 +31,11 @@
   
   --fw-700: 700;
 
-  /** 
-   * spacing
-   */
-
   --section-padding: 90px;
 
-  /**
-   * box shadow
-   */
-
-  --shadow-1: 0 0 20px hsla(216, 14%, 14%, 0.05);
-  --shadow-2: 0 0 0 0.05rem hsla(214, 88%, 27%, 0.08), 0 0 1.25rem hsla(216, 14%, 14%, 0.06);
-  --shadow-3: 0 0 1.25rem hsla(216, 14%, 14%, 0.04);
-
-  /**
-   * border radius
-   */
+  --shadow-1: 0 0 20px hsla(0, 14%, 14%, 0.05);
+  --shadow-2: 0 0 0 0.05rem hsla(0, 88%, 27%, 0.08), 0 0 1.25rem hsla(0, 14%, 14%, 0.06);
+  --shadow-3: 0 0 1.25rem hsla(0, 14%, 14%, 0.04);
 
   --radius-circle: 50%;
   --radius-pill: 100px;
@@ -64,19 +43,11 @@
   --radius-8: 8px;
   --radius-6: 6px;
 
-  /**
-   * transition
-   */
-
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
   --transition-3: 0.3s ease-in-out;
 
 }
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
@@ -139,7 +110,6 @@ body.nav-active { overflow: hidden; }
 ::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
-
 
 .popup .overlay {
   position: none;
@@ -219,7 +189,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .popup-list-style .popup-span-text .popup-list-item-style span{
-  color: blue;
+  color: rgb(255, 0, 0);
 }
 
 .popup .close-btn {
@@ -244,18 +214,6 @@ body.nav-active { overflow: hidden; }
   transform: translate(-50%, -50%) scale(1);
 }
 
-
-
-
-
-
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 16px; }
 
@@ -346,10 +304,6 @@ body.nav-active { overflow: hidden; }
 }
 
 .w-100 { width: 100%; }
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
 
 .header .btn { display: none; }
 
@@ -465,10 +419,6 @@ body.nav-active { overflow: hidden; }
   opacity: 0.8;
 }
 
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
 .hero {
   padding-block-start: calc(var(--section-padding) + 70px);
   text-align: center;
@@ -557,14 +507,6 @@ body.nav-active { overflow: hidden; }
 
 .hero .slider-btn.next { right: 20px; }
 
-
-
-
-
-/*-----------------------------------*\
-  #SERVICE
-\*-----------------------------------*/
-
 .service { text-align: center; }
 
 .service .section-title { margin-block-end: 50px; }
@@ -603,14 +545,6 @@ body.nav-active { overflow: hidden; }
 }
 
 .service-card .btn-text:is(:hover, :focus-visible) { opacity: 0.9; }
-
-
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
 
 .about .container {
   display: grid;
@@ -653,14 +587,6 @@ body.nav-active { overflow: hidden; }
   padding-block-end: 20px;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #FEATURES
-\*-----------------------------------*/
-
 .feature .container {
   display: grid;
   gap: 50px;
@@ -688,14 +614,6 @@ body.nav-active { overflow: hidden; }
 
 .feature-card .card-icon ion-icon { --ionicon-stroke-width: 40px; }
 
-
-
-
-
-/*-----------------------------------*\
-  #STATS
-\*-----------------------------------*/
-
 .stats { background-image: linear-gradient(to bottom, var(--white) 50%, var(--cultured) 50%); }
 
 .stats-card {
@@ -708,14 +626,6 @@ body.nav-active { overflow: hidden; }
 }
 
 .stats-card .card-text > * { color: var(--white); }
-
-
-
-
-
-/*-----------------------------------*\
-  #PROJECT
-\*-----------------------------------*/
 
 .project { background-color: var(--cultured); }
 
@@ -753,14 +663,6 @@ body.nav-active { overflow: hidden; }
   font-size: var(--fs-8);
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
-
 .cta { background-color: var(--charcoal); }
 
 .cta .container {
@@ -778,14 +680,6 @@ body.nav-active { overflow: hidden; }
   color: var(--white);
   border: none;
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
 
 .footer {
   background-color: var(--charcoal);
@@ -840,22 +734,8 @@ body.nav-active { overflow: hidden; }
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for large than 575px screen
- */
-
 @media (min-width: 575px) {
 
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 540px;
@@ -925,6 +805,9 @@ body.nav-active { overflow: hidden; }
     color: var(--white);
   }
 
+  .header {
+    margin-left: 80px;
+  }
 
 
   /**

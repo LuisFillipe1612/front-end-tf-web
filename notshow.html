@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Deletar Show</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img
+              src="images/logo.png"
+              width="100"
+              height="70"
+              class="logo-light"
+            />
+          </a>
+          <nav class="navbar">
+            <ul id="menu">
+                <li>
+                    <a href="/admin-dashboard.html">Início</a>
+                </li>
+                <li>
+                    <a href="/novoshow.html">Novo Show</a>
+                </li>
+                <li>
+                    <a href="/altshow.html">Alterar Show</a>
+                </li>
+                <li>
+                    <a href="/notshow.html">Cancelar Show</a>
+                </li>
+            </ul>
+          </nav>
+    </header>
+    
+    <div id="resposta">
+        <form>
+            <label for='codigo'>Código do Show:</label>
+            <input type='number' id='codigo'/>
+            <br>
+            <input id='submit' type='submit' value="Deletar" />
+        </form>
+    </div>
+
+    <script type="module" src="/js/notshow.js"></script>
+</body>
+</html>
