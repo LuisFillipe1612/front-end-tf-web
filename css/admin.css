@@ -66,3 +66,7 @@ header {
     width: 100px;
     font-size: medium;
 }
+
+form input {
+    width: 200px;
+}

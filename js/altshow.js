@@ -1,4 +1,3 @@
-// Function for datetime conversion with Minas Gerais (Brazil) timezone
 function convertDateTimeLocalBrazil(datetimeLocalValue) {
     // Create a Date object from the datetime-local input
     const date = new Date(datetimeLocalValue);
@@ -30,9 +29,11 @@ function convertDateTimeLocalBrazil(datetimeLocalValue) {
     };
 }
 
-document.getElementById('novoshow').addEventListener('submit', function(event) {
+
+document.getElementById('altshow').addEventListener('submit', async function(event) {
     event.preventDefault();
 
+    const codigo = document.getElementById('codigo').value;
     const dateValue = document.getElementById('data').value;
     const { brasilISOTimestamp, brazilUnixTimestamp } = convertDateTimeLocalBrazil(dateValue);
     
@@ -45,31 +46,36 @@ document.getElementById('novoshow').addEventListener('submit', function(event) {
     }
 
     const showData = {
-        codigo: document.getElementById('codigo').value,
         endereco: document.getElementById('endereco').value,
         pessoas: document.getElementById('pessoas').value,
         artista: document.getElementById('artista').value,
         data_hora: brasilISOTimestamp, // Use the validated ISO timestamp
         valor_disp: document.getElementById('valor_disp').value,
         valor_final: document.getElementById('valor_final').value,
-        responsavel: document.getElementById('responsavel').value
+        responsavel: document.getElementById('responsavel').value,
+        role: 'user' // Ensure the role is set to 'user'
     };
 
-    console.log('Show Data:', showData); // Log the show data
+    const token = localStorage.getItem('authToken');
 
-    const token = localStorage.getItem('authToken'); // Retrieve the token from localStorage
+    // Convert the date to the desired format
+    try {
+        const response = await fetch(`https://back-end-tf-web-pink.vercel.app/show/${codigo}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+                'x-access-token': token
+            },
+            body: JSON.stringify(showData)
+        });
 
-    fetch('https://back-end-tf-web-pink.vercel.app/show', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'x-access-token': token // Include the token in the headers
-        },
-        body: JSON.stringify(showData)
-    })
-    .then(response => response.json())
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Erro ao adicionar show.');
-    });
+        if (response.ok) {
+            alert('Show atualizado com sucesso!');
+        } else {
+            const errorData = await response.json();
+            alert(`Erro ao atualizar o show: ${errorData.message}`);
+        }
+    } catch (error) {
+        alert(`Erro ao atualizar o show: ${error.message}`);
+    }
 });

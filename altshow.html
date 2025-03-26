@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/admin.css">
-    <title>Painel Central</title>
+    <title>Alterar Show</title>
 </head>
 <body>
     <header>
@@ -34,6 +34,35 @@
           </nav>
     </header>
     
+    <div id="resposta">
+        <form id="altshow">
+            <input type="number" id="codigo" placeholder="Código">
+            <br>
+            <br>
+            <input type="text" id="endereco" placeholder="Endereço">
+            <br>
+            <br>
+            <input type="number" id="pessoas" placeholder="Número de Pessoas">
+            <br>
+            <br>
+            <input type="datetime-local" id="data" placeholder="Data e Hora">
+            <br>
+            <br>
+            <input type="text" id="artista" placeholder="Artista">
+            <br>
+            <br>
+            <input type="number" id="valor_disp" placeholder="Valor Disponível">
+            <br>
+            <br>
+            <input type="number" id="valor_final" placeholder="Valor Final">
+            <br>
+            <br>
+            <input type="text" id="responsavel" placeholder="Responsável">
+            <br>
+            <br>
+            <input type="submit" value="Cadastrar" id='submit'>
+        </form>
+    </div>
 
     <script type="module" src="/js/altshow.js"></script>
 </body>

@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // URLs da API
     const urlLogin = 'https://back-end-tf-web-pink.vercel.app/login';
-    const urlRegister = 'https://back-end-tf-web-pink.vercel.app/admin';
+    const urlRegister = 'https://back-end-tf-web-pink.vercel.app/user';
 
     // Estado inicial
     document.getElementById('sign-up').style.display = 'none';
-    document.getElementById('sign-in').style.display = 'block';
+    document.getElementById('sign-in').style.display = 'none';
 
     // Alternar entre formulários
     criarBtn.addEventListener('click', function() {
